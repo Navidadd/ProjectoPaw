@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- Incluir el encabezado -->
+</head>
+
+<section th:replace="fragments/header :: header"></section>
+    
+<body>
+    <div class="container">
+        <h1>Perfil de Usuario</h1>
+        <div>
+            <p><strong>Nombre:</strong> <span th:text="${usuario.nombre}"></span></p>
+            <p><strong>Apellido:</strong> <span th:text="${usuario.apellido}"></span></p>
+            <p><strong>Email:</strong> <span th:text="${usuario.email}"></span></p>
+            <p><strong>Edad:</strong> <span th:text="${usuario.edad}"></span></p>
+            <p><strong>País:</strong> <span th:text="${usuario.pais}"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Derechos de autor &copy; 2023</p>
+    </footer>
+</body>
+
+</html>
+
